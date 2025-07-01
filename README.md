@@ -3,7 +3,7 @@
 
 A simple email validator built with **HTML**, **CSS**, and **JavaScript**. It checks if the entered email is in a valid e-mail 📨 or not.
 
-Website Link--- 
+Website Link--- https://tej201104.github.io/email-validator/
 
 
 ## ⚙️ Features
