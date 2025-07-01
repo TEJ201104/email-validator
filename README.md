@@ -18,4 +18,4 @@ HTML | CSS | JavaScript
 
 ## 👨‍💻 Author
 
-**Your Name** - [GitHub](https://github.com/yourusername)
+**Your Name** - [GitHub](https://github.com/TEJ201104)
