@@ -1,120 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Huninn&display=swap');
 
 * {
-    font-family: "Savate", sans-serif;
+  font-family: "Huninn", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://wallpapercave.com/wp/wp8907852.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: black;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.479);
+  z-index: -1;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    padding: 10px 7px;
-    font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 10px 7px;
+  font-weight: bold;
 }
 
-nav div {
-    font-size: 50px;
-    font-weight: lighter;
+.logo {
+    justify-self: center;
 }
 
-ul {
-    display: flex;
+.logo span {
+    font-size: 40px;
 }
-
-ul li {
-    list-style: none;
-    padding: 0 13px;
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-ul>li>a:hover {
-    color: gray;
+.logo img {
+  width: 35px;
+  filter: invert(1);
+  padding: 0 10px;
+  justify-items: center;
 }
 
 main {
-    min-height: 82vh;
-}
-
-.logo img {
-    width: 35px;
-    filter: invert(1);
-    padding: 0 0 0 10px;
+    min-height: 87vh;
 }
 
 .container {
-    max-width: 80vw;
-    margin: auto;
-    padding: 9px 15px;
-    justify-items: center;
+  max-width: 80vw;
+  margin: auto;
+  padding: 20px;
 }
 
-.container h1 {
-    padding: 12px 0 0 0;
-}
-
-input[type='text'] {
-    min-width: 25vw;
-    padding: 3px 12px;
-    border: 2px solid black;
-    border-radius: 4px;
-    font-size: 20px;
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
 .btn {
-    background: black;
-    color: white;
-    font-size: 15px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
+  background: black;
+  color: white;
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-#resultCont div::first-letter {
-    text-transform: uppercase;
+.result {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.valid {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.invalid {
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
 footer {
-    font-size: 12px;
-    background-color: black;
-    color: white;
-    display: flex;
-    padding: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .container {
-        font-size: 12px;
-    }
-
-    input[type='text'] {
-        width: 100%;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .logo {
-        padding: 6px 0;
-        font-size: 12px;
-    }
-
-    .logo span {
-        font-size: 20px;
-    }
-
-    .logo img {
-        width: 15px;
-        filter: invert(1);
-    }
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
 }
