@@ -57,12 +57,3 @@ document.getElementById("submitBtn").addEventListener("click", async (e) => {
 
     resultCont.innerHTML = resultsHTML;
 });
-
-// 🌙 Dark Mode Toggle
-const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    themeToggle.textContent = document.body.classList.contains("dark")
-        ? "☀️ Light Mode"
-        : "🌙 Dark Mode";
-});
